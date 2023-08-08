@@ -13,4 +13,7 @@ module.exports = setup({
   stats: {
     colors: true,
   },
+  devServer: {
+    liveReload: false,
+  },
 });

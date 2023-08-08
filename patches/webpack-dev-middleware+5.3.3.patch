@@ -1,0 +1,36 @@
+diff --git a/node_modules/webpack-dev-middleware/dist/index.js b/node_modules/webpack-dev-middleware/dist/index.js
+index 22e0ee9..8239d20 100644
+--- a/node_modules/webpack-dev-middleware/dist/index.js
++++ b/node_modules/webpack-dev-middleware/dist/index.js
+@@ -249,6 +249,7 @@ function wdm(compiler, options = {}) {
+        * @returns {WatchOptions}
+        */
+       childCompiler => childCompiler.options.watchOptions || {});
++      // 1.启动webpack编译代码
+       context.watching =
+       /** @type {MultiWatching} */
+       context.compiler.watch(
+diff --git a/node_modules/webpack-dev-middleware/dist/utils/setupHooks.js b/node_modules/webpack-dev-middleware/dist/utils/setupHooks.js
+index 4d1b85b..b2d7334 100644
+--- a/node_modules/webpack-dev-middleware/dist/utils/setupHooks.js
++++ b/node_modules/webpack-dev-middleware/dist/utils/setupHooks.js
+@@ -208,6 +208,7 @@ function setupHooks(context) {
+     });
+   }
+ 
++  // 3.不同钩子注册回调
+   context.compiler.hooks.watchRun.tap("webpack-dev-middleware", invalid);
+   context.compiler.hooks.invalid.tap("webpack-dev-middleware", invalid);
+   context.compiler.hooks.done.tap("webpack-dev-middleware", done);
+diff --git a/node_modules/webpack-dev-middleware/dist/utils/setupOutputFileSystem.js b/node_modules/webpack-dev-middleware/dist/utils/setupOutputFileSystem.js
+index e1d29b4..981c7bc 100644
+--- a/node_modules/webpack-dev-middleware/dist/utils/setupOutputFileSystem.js
++++ b/node_modules/webpack-dev-middleware/dist/utils/setupOutputFileSystem.js
+@@ -36,6 +36,7 @@ function setupOutputFileSystem(context) {
+ 
+     outputFileSystem = outputFileSystemFromOptions;
+   } else {
++    // 2.将webpack打包文件改成写入内存
+     outputFileSystem = memfs.createFsFromVolume(new memfs.Volume()); // TODO: remove when we drop webpack@4 support
+     // @ts-ignore
+ 

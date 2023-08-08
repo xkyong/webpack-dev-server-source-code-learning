@@ -4,6 +4,8 @@ const Webpack = require("webpack");
 const WebpackDevServer = require("../../../lib/Server");
 const webpackConfig = require("./webpack.config");
 
+console.log("webpackConfig---", webpackConfig);
+
 const compiler = Webpack(webpackConfig);
 const devServerOptions = { ...webpackConfig.devServer, open: true };
 const server = new WebpackDevServer(devServerOptions, compiler);

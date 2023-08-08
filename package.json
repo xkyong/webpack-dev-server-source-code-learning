@@ -41,7 +41,8 @@
     "test": "npm run test:coverage",
     "pretest": "npm run lint",
     "prepare": "husky install && npm run build",
-    "release": "standard-version"
+    "release": "standard-version",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@types/bonjour": "^3.5.9",
@@ -66,6 +67,7 @@
     "launch-editor": "^2.6.0",
     "open": "^8.0.9",
     "p-retry": "^4.5.0",
+    "patch-package": "^8.0.0",
     "rimraf": "^3.0.2",
     "schema-utils": "^4.0.0",
     "selfsigned": "^2.1.1",

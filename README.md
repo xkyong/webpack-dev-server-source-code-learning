@@ -6,6 +6,12 @@
 
 # webpack-dev-server-4.15.1
 
+初始的调试示例：
+
+`cd` 到调试文件夹 `examples/api/start`，然后执行命令 `node ./server.js`，之后在关键位置打上断点进行调试。
+
+一旦弄清楚上述这个 `server` 的执行流程后，后续可以使用 `example` 其他示例进行调试，加深理解。
+
 Use [webpack](https://webpack.js.org) with a development server that provides
 live reloading. This should be used for **development only**.
 
