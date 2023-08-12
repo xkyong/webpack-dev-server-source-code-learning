@@ -1,0 +1,24 @@
+{
+  "files": [
+    {
+      "path": "lib/Server.js",
+      "bookmarks": [
+        {
+          "line": 1841,
+          "column": 22,
+          "label": "initialize: 初始化client和dev-server，以plugin的形式挂到compiler上，添加hooks插件，实例化express服务等"
+        },
+        {
+          "line": 2057,
+          "column": 24,
+          "label": "webpack-dev-middleware: middleware for serving webpack bundle"
+        },
+        {
+          "line": 3335,
+          "column": 17,
+          "label": "start: webpack-dev-server启动入口"
+        }
+      ]
+    }
+  ]
+}
