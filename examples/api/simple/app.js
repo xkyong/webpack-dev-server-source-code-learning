@@ -3,7 +3,7 @@
 const target = document.querySelector("#target");
 
 target.classList.add("pass");
-target.innerHTML = "Success!";
+target.innerHTML = "Success12!";
 
 // This results in a warning:
 if (!window) {

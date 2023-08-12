@@ -14,6 +14,6 @@ module.exports = setup({
     colors: true,
   },
   devServer: {
-    liveReload: false,
+    hot: true,
   },
 });
