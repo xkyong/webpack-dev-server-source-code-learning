@@ -4,9 +4,19 @@
       "path": "lib/Server.js",
       "bookmarks": [
         {
+          "line": 257,
+          "column": 39,
+          "label": "Server constructor"
+        },
+        {
           "line": 1841,
           "column": 22,
           "label": "initialize: 初始化client和dev-server，以plugin的形式挂到compiler上，添加hooks插件，实例化express服务等"
+        },
+        {
+          "line": 2004,
+          "column": 48,
+          "label": "编译完成通过此回调告诉客户端（浏览器）"
         },
         {
           "line": 2057,
@@ -14,9 +24,34 @@
           "label": "webpack-dev-middleware: middleware for serving webpack bundle"
         },
         {
-          "line": 3335,
+          "line": 2252,
+          "column": 38,
+          "label": "web-dev-server配置项proxy基于http-proxy-middleware实现"
+        },
+        {
+          "line": 2402,
+          "column": 56,
+          "label": "web-dev-server配置项historyApiFallback基于connect-history-api-fallback实现"
+        },
+        {
+          "line": 3338,
           "column": 17,
           "label": "start: webpack-dev-server启动入口"
+        },
+        {
+          "line": 3419,
+          "column": 35,
+          "label": "创建ws服务时机"
+        }
+      ]
+    },
+    {
+      "path": "node_modules/webpack/lib/hmr/HotModuleReplacement.runtime.js",
+      "bookmarks": [
+        {
+          "line": 190,
+          "column": 19,
+          "label": "HotModuleReplacementPlugin会将一部分运行时代码注入到客户端（浏览器）中"
         }
       ]
     }

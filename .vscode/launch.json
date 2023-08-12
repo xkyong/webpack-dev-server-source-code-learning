@@ -10,7 +10,8 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}\\examples\\api\\start\\server.js",
-      "stopOnEntry": true
+      "stopOnEntry": true,
+      "cwd": "${workspaceFolder}\\examples\\api\\start"
     }
   ]
 }
