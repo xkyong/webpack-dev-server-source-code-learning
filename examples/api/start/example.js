@@ -3,4 +3,4 @@
 const target = document.querySelector("#target");
 
 target.innerHTML =
-  "123Modify and save <code>/examples/hmr/example.js</code> to update this element without reloading the page.";
+  "Modify and save <code>/examples/hmr/example.js</code> to update this element without reloading the page.";
