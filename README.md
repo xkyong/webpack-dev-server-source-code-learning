@@ -8,7 +8,9 @@
 
 初始的调试示例：
 
-`cd` 到调试文件夹 `examples/api/start`，然后执行命令 `node ./server.js`，之后在关键位置打上断点进行调试。
+`cd` 到调试文件夹 `examples/api/start`，然后执行命令 `node ./server.js`，就可以打开页面测试热更新效果。
+
+对于调试，在 `examples/api/start/server.js` 文件中，敲击 `F5` 键，即可进入调试模式（配合 `.vscode/launch.json` 文件）。
 
 一旦弄清楚上述这个 `server` 的执行流程后，后续可以使用 `example` 其他示例进行调试，加深理解。
 
